@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gray-Man-Clicker</title>
+    <style>
+        .centralized {
+            display: block;
+            margin: 0 auto;
+        }
+        .clickbutton {
+            color: black;
+            background-color: white;
+            font-size: 50px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        var clicks = 0 //sets the variable for the points
+        function changeimg() { //sets the function that will change the buttonguy image when the click here! button is clicked
+            document.getElementById("buttonguy").src="btn.png"
+            setTimeout(function() {
+                document.getElementById("buttonguy").src = "button.png";
+                }, 250);
+        }
+        function updatecounter() { //sets the function that is used to update the click counter
+            document.getElementById("points").innerHTML = clicks; 
+        }
+        function incrementclick() { //sets the function that will update the click counter when the click here! button is clicked
+            clicks += 1
+            changeimg()
+            updatecounter()
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;" >Gray Man Clicker</h1>
+    <hr>
+    <h2 style="text-align: center; font-size: 50px;" id="points">0</h2>
+    <button class="clickbutton" onclick="incrementclick()">Click here!</button>
+    <img id="buttonguy" class="centralized" src="button.png">
+    <hr>
+    <h1 style="text-align: center;" >Store</h1>
+</body>
+</html>
