@@ -133,8 +133,8 @@ function luck() {
     }
 }
 function beat() {
-    if (clicks >= 10000000) {
-        clicks -= 10000000
+    if (clicks >= 1000000) {
+        clicks -= 1000000
         updatecounter()
         const beatbtnc = document.getElementById("beatbtn")
         beatbtnc.disabled = true
