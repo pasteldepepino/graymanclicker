@@ -1,0 +1,43 @@
+<!--Created by Raul Mesquita-->
+<!--https://github.com/pasteldepepino-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gray Man Clicker</title>
+    <link rel="stylesheet" href="styles.css"> <!--imports the stylesheets from styles.css-->
+    <script src="scripts.js"></script> <!--imports the javascript scripts from scripts.js-->
+</head>
+<body>
+    <a href="https://github.com/pasteldepepino">My github</a>
+    <h1 style="text-align: center;" >Gray Man Clicker</h1>
+    <hr>
+    <h2 style="text-align: center; font-size: 50px;" id="points">0</h2>
+    <button class="clickbutton" onclick="incrementclick()">Click here!</button> <!--Main section-->
+    <img id="buttonguy" class="centralized" src="button.png" alt="guy pressing a button">
+    <hr>
+    <h1 style="text-align: center;" >Store</h1>
+    <img class="centralized" id="moneyguy" src="money.png" alt="rich guy">
+    <button id="dblbtn" class="strbtns" onclick="dblclick()">Double click / Cost 200 points</button>
+    <button id="multibtn" class="strbtns" onclick="multiclick()">Click multiplier / Cost 400 points plus 5% for each bought</button> 
+    <button id="autobtn" class="strbtns" onclick="autoclickset()">Auto click / Cost 1.000 points plus 10% for each bought</button>
+    <button id="rndmbtn" class="strbtns" onclick="randomsum()">Random sum / Cost 3.000 points plus 10% for each bought</button> <!--Store section-->
+    <button id="lckbtn" class="strbtns" onclick="luck()">Lucky strike / Cost 4.500 points plus 10% for each bought</button>
+    <hr>
+    <h1 style="text-align: center;">Info</h1>
+    <ul>
+        <li class="centralized">Double click: Gives you plus 2 points per click</li>
+        <li class="centralized">Click Multiplier: Gives you one extra click per buy</li>
+        <li class="centralized">Auto click: Gives you one click per second per buy</li>
+        <li class="centralized">Random sum: Gives you a random value (10x unities bought) of extra points per click</li> <!--Info section-->
+        <li class="centralized">Lucky strike: Has a 1% chance (per buy) of multipling by 10 all your power-ups gains. (individualy)</li>
+    </ul>
+    <hr>
+    <h1 style="text-align: center;">Beat the game</h1>
+    <button class="strbtns" id="beatbtn" onclick="beat()">Beat the game / Cost 10.000.000 clicks</button> <!--Beat the game section-->
+    <h2 style="text-align: center;">WARNING!</h2>
+    <p style="text-align: center;">Remember to take a screenshot of the credits screen if you want to save it. Because you can't click to beat the game again</p>
+
+
+</body>
+</html>
