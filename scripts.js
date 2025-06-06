@@ -138,7 +138,7 @@ function beat() {
         updatecounter()
         const beatbtnc = document.getElementById("beatbtn")
         beatbtnc.disabled = true
-        window.location.replace("winner.html")
+        window.location.replace("credits.html")
     }
     else {
         alert("You don't have enough clicks to beat the game")
